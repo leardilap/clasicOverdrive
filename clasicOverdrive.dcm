@@ -1,0 +1,19 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP +4V5
+D power-flag symbol
+K Power Flag Symbol
+$ENDCMP
+#
+$CMP 2N2222
+D 800mA Ic, 50V Vce, NPN Transistor, TO-18
+K NPN Transistor
+F https://www.centralsemi.com/get_document.php?cmp=1&mergetype=pd&mergepath=pd&pdf_id=2N2221.PDF
+$ENDCMP
+#
+$CMP foot_switch
+D triple dual position switch
+K Foot Switch
+$ENDCMP
+#
+#End Doc Library
