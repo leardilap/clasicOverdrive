@@ -97,7 +97,7 @@ U 1 1 5ACC9FDB
 P 7550 2750
 F 0 "RV3" H 7480 2796 50  0000 R CNN
 F 1 "100k" H 7480 2705 50  0000 R CNN
-F 2 "" H 7550 2750 50  0001 C CNN
+F 2 "clasicOverdrive:Pot_series_296" H 7550 2750 50  0001 C CNN
 F 3 "~" H 7550 2750 50  0001 C CNN
 	1    7550 2750
 	1    0    0    -1  
@@ -130,7 +130,7 @@ U 1 1 5ACC22F8
 P 8400 2750
 F 0 "Q2" H 8591 2796 50  0000 L CNN
 F 1 "2N2222" H 8600 2700 50  0000 L CNN
-F 2 "Package_TO_SOT_THT:TO-18" H 8600 2675 50  0001 L CIN
+F 2 "Package_TO_SOT_THT:TO-18-3" H 8600 2675 50  0001 L CIN
 F 3 "https://www.centralsemi.com/get_document.php?cmp=1&mergetype=pd&mergepath=pd&pdf_id=2N2221.PDF" H 8400 2750 50  0001 L CNN
 	1    8400 2750
 	1    0    0    -1  
@@ -174,7 +174,7 @@ U 1 1 5ACC2718
 P 5550 1600
 F 0 "RV2" V 5350 1650 50  0000 R CNN
 F 1 "25k" V 5450 1650 50  0000 R CNN
-F 2 "" H 5550 1600 50  0001 C CNN
+F 2 "clasicOverdrive:Pot_series_296" H 5550 1600 50  0001 C CNN
 F 3 "~" H 5550 1600 50  0001 C CNN
 	1    5550 1600
 	0    1    1    0   
@@ -229,7 +229,7 @@ U 1 1 5ACC2B71
 P 4550 2550
 F 0 "RV1" V 4350 2600 50  0000 R CNN
 F 1 "500k" V 4450 2600 50  0000 R CNN
-F 2 "" H 4550 2550 50  0001 C CNN
+F 2 "clasicOverdrive:Pot_series_296" H 4550 2550 50  0001 C CNN
 F 3 "~" H 4550 2550 50  0001 C CNN
 	1    4550 2550
 	0    -1   -1   0   
@@ -290,34 +290,12 @@ F 3 "~" H 3550 2350 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L Connector_Specialized:Audio-Jack-2 J3
-U 1 1 5ACC4995
-P 10600 2900
-F 0 "J3" H 10607 3125 50  0000 C CNN
-F 1 "Audio-Jack-2" H 10607 3034 50  0000 C CNN
-F 2 "" H 10850 2900 50  0001 C CNN
-F 3 "~" H 10850 2900 50  0001 C CNN
-	1    10600 2900
-	-1   0    0    -1  
-$EndComp
-$Comp
-L Connector_Specialized:Audio-Jack-3 J2
-U 1 1 5ACC4D69
-P 900 3700
-F 0 "J2" H 876 4025 50  0000 C CNN
-F 1 "Audio-Jack-3" H 800 3950 50  0000 C CNN
-F 2 "" H 1150 3800 50  0001 C CNN
-F 3 "~" H 1150 3800 50  0001 C CNN
-	1    900  3700
-	1    0    0    -1  
-$EndComp
-$Comp
 L Connector_Specialized:Jack-DC J1
 U 1 1 5ACC4F8C
 P 800 2650
 F 0 "J1" H 800 2450 50  0000 R CNN
 F 1 "Jack-DC" H 950 2850 50  0000 R CNN
-F 2 "" H 850 2610 50  0001 C CNN
+F 2 "Connector_Audio:Jack_Horizontal" H 850 2610 50  0001 C CNN
 F 3 "~" H 850 2610 50  0001 C CNN
 	1    800  2650
 	1    0    0    1   
@@ -519,8 +497,6 @@ F 3 "" H 10400 3200 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	10400 3000 10400 3200
-Wire Wire Line
 	6000 3000 5900 3000
 Wire Wire Line
 	5900 3000 5900 1600
@@ -676,7 +652,7 @@ U 1 1 5ACF23D9
 P 3250 3800
 F 0 "Q1" H 3441 3846 50  0000 L CNN
 F 1 "2N2222" H 3441 3755 50  0000 L CNN
-F 2 "Package_TO_SOT_THT:TO-18" H 3450 3725 50  0001 L CIN
+F 2 "Package_TO_SOT_THT:TO-18-3" H 3450 3725 50  0001 L CIN
 F 3 "https://www.centralsemi.com/get_document.php?cmp=1&mergetype=pd&mergepath=pd&pdf_id=2N2221.PDF" H 3250 3800 50  0001 L CNN
 	1    3250 3800
 	1    0    0    -1  
@@ -995,7 +971,7 @@ U 3 1 5ADADCB1
 P 9950 3000
 F 0 "U1" H 9950 2533 50  0000 C CNN
 F 1 "foot_switch" H 9950 2624 50  0000 C CNN
-F 2 "" H 9950 3000 50  0001 C CNN
+F 2 "clasicOverdrive:FS57003PLT2B2M2QE" H 9950 3000 50  0001 C CNN
 F 3 "" H 9950 3000 50  0001 C CNN
 	3    9950 3000
 	-1   0    0    1   
@@ -1011,7 +987,7 @@ U 2 1 5ADB7AE8
 P 1650 3700
 F 0 "U1" H 1650 3942 50  0000 C CNN
 F 1 "foot_switch" H 1650 3851 50  0000 C CNN
-F 2 "" H 1650 3700 50  0001 C CNN
+F 2 "clasicOverdrive:FS57003PLT2B2M2QE" H 1650 3700 50  0001 C CNN
 F 3 "" H 1650 3700 50  0001 C CNN
 	2    1650 3700
 	-1   0    0    -1  
@@ -1022,23 +998,23 @@ Connection ~ 2050 3800
 $Comp
 L power:GND #PWR0126
 U 1 1 5ADBE742
-P 700 3900
-F 0 "#PWR0126" H 700 3650 50  0001 C CNN
-F 1 "GND" H 705 3727 50  0000 C CNN
-F 2 "" H 700 3900 50  0001 C CNN
-F 3 "" H 700 3900 50  0001 C CNN
-	1    700  3900
+P 1200 3900
+F 0 "#PWR0126" H 1200 3650 50  0001 C CNN
+F 1 "GND" H 1205 3727 50  0000 C CNN
+F 2 "" H 1200 3900 50  0001 C CNN
+F 3 "" H 1200 3900 50  0001 C CNN
+	1    1200 3900
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	700  3900 700  3800
+	1200 3900 1200 3800
 $Comp
 L clasicOverdrive:foot_switch U1
 U 1 1 5ADC57EA
 P 950 6050
 F 0 "U1" H 950 5583 50  0000 C CNN
 F 1 "foot_switch" H 950 5674 50  0000 C CNN
-F 2 "" H 950 6050 50  0001 C CNN
+F 2 "clasicOverdrive:FS57003PLT2B2M2QE" H 950 6050 50  0001 C CNN
 F 3 "" H 950 6050 50  0001 C CNN
 	1    950  6050
 	1    0    0    1   
@@ -1060,8 +1036,6 @@ F 3 "" H 650 6200 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	650  6200 650  5950
-Wire Wire Line
-	1100 2750 1100 3600
 $Comp
 L power:+9V #PWR0128
 U 1 1 5ADDFE41
@@ -1077,13 +1051,10 @@ Wire Wire Line
 	1100 2400 1100 2550
 Wire Wire Line
 	9650 1150 9650 2800
-Connection ~ 1350 3700
 Wire Wire Line
 	1350 1150 1350 3700
 Wire Wire Line
 	1350 1150 9650 1150
-Wire Wire Line
-	1100 3700 1350 3700
 Wire Wire Line
 	1250 5850 1350 5850
 Wire Wire Line
@@ -1096,4 +1067,55 @@ Text Notes 5150 3600 0    50   ~ 0
 tant
 Text Notes 4500 2300 0    50   ~ 0
 DRIVE
+Text Notes 7300 2550 0    50   ~ 0
+LEVEL
+$Comp
+L dk_Barrel-Audio-Connectors:SN49B12B CON1
+U 1 1 5AD02C8E
+P 800 3700
+F 0 "CON1" H 856 4087 60  0000 C CNN
+F 1 "SN49B12B" H 856 3981 60  0000 C CNN
+F 2 "digikey-footprints:Headphone_Jack_6.35mm_RA49B14B" H 1000 3900 60  0001 L CNN
+F 3 "http://www.switchcraft.com/Drawings/SN49B_SERIES_CD.pdf" H 1000 4000 60  0001 L CNN
+F 4 "SC1522-ND" H 1000 4100 60  0001 L CNN "Digi-Key_PN"
+F 5 "SN49B12B" H 1000 4200 60  0001 L CNN "MPN"
+F 6 "Connectors, Interconnects" H 1000 4300 60  0001 L CNN "Category"
+F 7 "Barrel - Audio Connectors" H 1000 4400 60  0001 L CNN "Family"
+F 8 "http://www.switchcraft.com/Drawings/SN49B_SERIES_CD.pdf" H 1000 4500 60  0001 L CNN "DK_Datasheet_Link"
+F 9 "/product-detail/en/switchcraft-inc/SN49B12B/SC1522-ND/412780" H 1000 4600 60  0001 L CNN "DK_Detail_Page"
+F 10 "CONN JACK STEREO 6.35MM R/A" H 1000 4700 60  0001 L CNN "Description"
+F 11 "Switchcraft Inc." H 1000 4800 60  0001 L CNN "Manufacturer"
+F 12 "Active" H 1000 4900 60  0001 L CNN "Status"
+	1    800  3700
+	1    0    0    -1  
+$EndComp
+$Comp
+L dk_Barrel-Audio-Connectors:SN49B12B CON2
+U 1 1 5AD030A4
+P 10800 3000
+F 0 "CON2" H 10857 3387 60  0000 C CNN
+F 1 "SN49B12B" H 10857 3281 60  0000 C CNN
+F 2 "digikey-footprints:Headphone_Jack_6.35mm_RA49B14B" H 11000 3200 60  0001 L CNN
+F 3 "http://www.switchcraft.com/Drawings/SN49B_SERIES_CD.pdf" H 11000 3300 60  0001 L CNN
+F 4 "SC1522-ND" H 11000 3400 60  0001 L CNN "Digi-Key_PN"
+F 5 "SN49B12B" H 11000 3500 60  0001 L CNN "MPN"
+F 6 "Connectors, Interconnects" H 11000 3600 60  0001 L CNN "Category"
+F 7 "Barrel - Audio Connectors" H 11000 3700 60  0001 L CNN "Family"
+F 8 "http://www.switchcraft.com/Drawings/SN49B_SERIES_CD.pdf" H 11000 3800 60  0001 L CNN "DK_Datasheet_Link"
+F 9 "/product-detail/en/switchcraft-inc/SN49B12B/SC1522-ND/412780" H 11000 3900 60  0001 L CNN "DK_Detail_Page"
+F 10 "CONN JACK STEREO 6.35MM R/A" H 11000 4000 60  0001 L CNN "Description"
+F 11 "Switchcraft Inc." H 11000 4100 60  0001 L CNN "Manufacturer"
+F 12 "Active" H 11000 4200 60  0001 L CNN "Status"
+	1    10800 3000
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	1100 2750 1200 2750
+Wire Wire Line
+	1200 2750 1200 3600
+Wire Wire Line
+	1200 3700 1350 3700
+Connection ~ 1350 3700
+Wire Wire Line
+	10400 3100 10400 3200
 $EndSCHEMATC
