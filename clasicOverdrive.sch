@@ -1118,4 +1118,48 @@ Wire Wire Line
 Connection ~ 1350 3700
 Wire Wire Line
 	10400 3100 10400 3200
+$Comp
+L Mechanical:Mounting_Hole MK1
+U 1 1 5ADA8A7E
+P 9700 5150
+F 0 "MK1" H 9800 5196 50  0000 L CNN
+F 1 "Mounting_Hole" H 9800 5105 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3" H 9700 5150 50  0001 C CNN
+F 3 "" H 9700 5150 50  0001 C CNN
+	1    9700 5150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:Mounting_Hole MK2
+U 1 1 5ADA8C59
+P 9700 5350
+F 0 "MK2" H 9800 5396 50  0000 L CNN
+F 1 "Mounting_Hole" H 9800 5305 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3" H 9700 5350 50  0001 C CNN
+F 3 "" H 9700 5350 50  0001 C CNN
+	1    9700 5350
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:Mounting_Hole MK3
+U 1 1 5ADA8CDF
+P 9700 5550
+F 0 "MK3" H 9800 5596 50  0000 L CNN
+F 1 "Mounting_Hole" H 9800 5505 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3" H 9700 5550 50  0001 C CNN
+F 3 "" H 9700 5550 50  0001 C CNN
+	1    9700 5550
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:Mounting_Hole MK4
+U 1 1 5ADA8D59
+P 9700 5750
+F 0 "MK4" H 9800 5796 50  0000 L CNN
+F 1 "Mounting_Hole" H 9800 5705 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3" H 9700 5750 50  0001 C CNN
+F 3 "" H 9700 5750 50  0001 C CNN
+	1    9700 5750
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
