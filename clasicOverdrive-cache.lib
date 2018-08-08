@@ -35,32 +35,6 @@ X ~ 7 300 0 100 L 50 50 2 1 O
 ENDDRAW
 ENDDEF
 #
-# Connector_Specialized:Jack-DC
-#
-DEF Connector_Specialized:Jack-DC J 0 40 Y Y 1 F N
-F0 "J" 0 210 50 H V C CNN
-F1 "Connector_Specialized:Jack-DC" 0 -175 50 H V C CNN
-F2 "" 50 -40 50 H I C CNN
-F3 "" 50 -40 50 H I C CNN
-ALIAS Jack-DC
-$FPLIST
- Barrel*Jack*
- BARREL*JACK*
-$ENDFPLIST
-DRAW
-A -130 100 25 901 -901 0 1 10 F -130 125 -130 75
-A -130 100 25 901 -901 0 1 10 N -130 125 -130 75
-S 145 125 -130 75 0 1 10 F
-P 2 0 1 10 50 -90 75 -65 N
-P 2 0 1 10 200 100 150 100 N
-P 4 0 1 10 200 0 50 0 50 -90 25 -65 N
-P 6 0 1 10 -150 -100 -100 -100 -50 -50 0 -100 100 -100 200 -100 N
-X ~ 1 300 100 100 L 50 50 1 1 P
-X ~ 2 300 -100 100 L 50 50 1 1 P
-X ~ 3 300 0 100 L 50 50 1 1 P
-ENDDRAW
-ENDDEF
-#
 # Device:C
 #
 DEF Device:C C 0 10 N Y 1 F N
@@ -69,7 +43,7 @@ F1 "Device:C" 25 -100 50 H V L CNN
 F2 "" 38 -150 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 $FPLIST
- C_*
+ *:C_*
 $ENDFPLIST
 DRAW
 P 2 0 1 20 -80 -30 80 -30 N
@@ -87,7 +61,7 @@ F1 "Device:CP" 25 -100 50 H V L CNN
 F2 "" 38 -150 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 $FPLIST
- CP_*
+ *:CP_*
 $ENDFPLIST
 DRAW
 S -90 20 -90 40 0 1 0 N
@@ -104,7 +78,7 @@ ENDDEF
 #
 # Device:LED
 #
-DEF Device:LED D 0 40 Y N 1 F N
+DEF Device:LED D 0 40 N N 1 F N
 F0 "D" 0 100 50 H V C CNN
 F1 "Device:LED" 0 -100 50 H V C CNN
 F2 "" 0 0 50 H I C CNN
@@ -125,26 +99,6 @@ X A 2 150 0 100 L 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# Device:POT
-#
-DEF Device:POT RV 0 40 Y N 1 F N
-F0 "RV" -175 0 50 V V C CNN
-F1 "Device:POT" -100 0 50 V V C CNN
-F2 "" 0 0 50 H I C CNN
-F3 "" 0 0 50 H I C CNN
-$FPLIST
- Potentiometer*
-$ENDFPLIST
-DRAW
-S 40 100 -40 -100 0 1 10 N
-P 2 0 1 0 100 0 60 0 N
-P 3 0 1 0 45 0 90 20 90 -20 F
-X 1 1 0 150 50 D 50 50 1 1 P
-X 2 2 150 0 50 L 50 50 1 1 P
-X 3 3 0 -150 50 U 50 50 1 1 P
-ENDDRAW
-ENDDEF
-#
 # Device:R
 #
 DEF Device:R R 0 0 N Y 1 F N
@@ -153,8 +107,7 @@ F1 "Device:R" 0 0 50 V V C CNN
 F2 "" -70 0 50 V I C CNN
 F3 "" 0 0 50 H I C CNN
 $FPLIST
- R_*
- R_*
+ *:R_*
 $ENDFPLIST
 DRAW
 S -40 -100 40 100 0 1 10 N
@@ -168,12 +121,11 @@ ENDDEF
 DEF Diode:1N4148 D 0 40 N N 1 F N
 F0 "D" 0 100 50 H V C CNN
 F1 "Diode:1N4148" 0 -100 50 H V C CNN
-F2 "Diode_THT:D_DO-35_SOD27_Horizontal_RM10" 0 -175 50 H I C CNN
+F2 "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal" 0 -175 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 ALIAS 1N4448 1N4149 1N4151 1N914 BA243 BA244 BA282 BA283 BAV17 BAV18 BAV19 BAV20 BAV21 BAW75 BAW76 BAY93
 $FPLIST
- D*DO?35*
- D*SOD27*
+ *:D*DO?35*
 $ENDFPLIST
 DRAW
 P 2 0 1 8 -50 50 -50 -50 N
@@ -197,6 +149,80 @@ $FPLIST
 $ENDFPLIST
 DRAW
 C 0 0 50 0 1 50 N
+ENDDRAW
+ENDDEF
+#
+# clasicOverdrive-rescue:Jack-DC-Connector_Specialized
+#
+DEF clasicOverdrive-rescue:Jack-DC-Connector_Specialized J 0 40 Y Y 1 F N
+F0 "J" 0 210 50 H V C CNN
+F1 "clasicOverdrive-rescue:Jack-DC-Connector_Specialized" 0 -175 50 H V C CNN
+F2 "" 50 -40 50 H I C CNN
+F3 "" 50 -40 50 H I C CNN
+$FPLIST
+ Barrel*Jack*
+ BARREL*JACK*
+$ENDFPLIST
+DRAW
+A -130 100 25 901 -901 0 1 10 F -130 125 -130 75
+A -130 100 25 901 -901 0 1 10 N -130 125 -130 75
+S 145 125 -130 75 0 1 10 F
+P 2 0 1 10 50 -90 75 -65 N
+P 2 0 1 10 200 100 150 100 N
+P 4 0 1 10 200 0 50 0 50 -90 25 -65 N
+P 6 0 1 10 -150 -100 -100 -100 -50 -50 0 -100 100 -100 200 -100 N
+X ~ 1 300 100 100 L 50 50 1 1 P
+X ~ 2 300 -100 100 L 50 50 1 1 P
+X ~ 3 300 0 100 L 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# clasicOverdrive-rescue:POT-Device
+#
+DEF clasicOverdrive-rescue:POT-Device RV 0 40 Y N 1 F N
+F0 "RV" -175 0 50 V V C CNN
+F1 "clasicOverdrive-rescue:POT-Device" -100 0 50 V V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+$FPLIST
+ Potentiometer*
+$ENDFPLIST
+DRAW
+S 40 100 -40 -100 0 1 10 N
+P 2 0 1 0 100 0 60 0 N
+P 3 0 1 0 45 0 90 20 90 -20 F
+X 1 1 0 150 50 D 50 50 1 1 P
+X 2 2 150 0 50 L 50 50 1 1 P
+X 3 3 0 -150 50 U 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# clasicOverdrive-rescue:SN49B12B-dk_Barrel-Audio-Connectors
+#
+DEF clasicOverdrive-rescue:SN49B12B-dk_Barrel-Audio-Connectors CON 0 40 Y Y 1 F N
+F0 "CON" 0 300 60 H V C CNN
+F1 "clasicOverdrive-rescue:SN49B12B-dk_Barrel-Audio-Connectors" 0 400 60 H V C CNN
+F2 "digikey-footprints:Headphone_Jack_6.35mm_SN49B12B" 200 200 60 H I L CNN
+F3 "http://www.switchcraft.com/Drawings/SN49B_SERIES_CD.pdf" 200 300 60 H I L CNN
+F4 "SC1522-ND" 200 400 60 H I L CNN "Digi-Key_PN"
+F5 "SN49B12B" 200 500 60 H I L CNN "MPN"
+F6 "Connectors, Interconnects" 200 600 60 H I L CNN "Category"
+F7 "Barrel - Audio Connectors" 200 700 60 H I L CNN "Family"
+F8 "http://www.switchcraft.com/Drawings/SN49B_SERIES_CD.pdf" 200 800 60 H I L CNN "DK_Datasheet_Link"
+F9 "/product-detail/en/switchcraft-inc/SN49B12B/SC1522-ND/412780" 200 900 60 H I L CNN "DK_Detail_Page"
+F10 "CONN JACK STEREO 6.35MM R/A" 200 1000 60 H I L CNN "Description"
+F11 "Switchcraft Inc." 200 1100 60 H I L CNN "Manufacturer"
+F12 "Active" 200 1200 60 H I L CNN "Status"
+DRAW
+S 200 200 -300 -200 0 1 0 f
+P 4 0 1 0 200 0 100 0 50 -50 0 0 N
+P 4 0 1 0 200 100 0 100 -50 50 -100 100 N
+P 6 0 1 0 200 -100 -150 -100 -150 100 -200 100 -200 -50 -150 -50 N
+X ~ R 400 100 200 L 50 50 1 1 B
+X ~ RB 0 -400 200 U 50 50 1 1 B
+X ~ S 400 -100 200 L 50 50 1 1 B
+X ~ T 400 0 200 L 50 50 1 1 B
+X ~ TB -100 -400 200 U 50 50 1 1 B
 ENDDRAW
 ENDDEF
 #
@@ -278,35 +304,6 @@ X ~ 6 300 -200 100 L 50 50 2 1 P
 X ~ 7 300 0 100 L 50 50 3 1 P
 X ~ 8 -300 -100 100 R 50 50 3 1 P
 X ~ 9 300 -200 100 L 50 50 3 1 P
-ENDDRAW
-ENDDEF
-#
-# dk_Barrel-Audio-Connectors:SN49B12B
-#
-DEF dk_Barrel-Audio-Connectors:SN49B12B CON 0 40 Y Y 1 F N
-F0 "CON" 0 300 60 H V C CNN
-F1 "dk_Barrel-Audio-Connectors:SN49B12B" 0 400 60 H V C CNN
-F2 "digikey-footprints:Headphone_Jack_6.35mm_SN49B12B" 200 200 60 H I L CNN
-F3 "http://www.switchcraft.com/Drawings/SN49B_SERIES_CD.pdf" 200 300 60 H I L CNN
-F4 "SC1522-ND" 200 400 60 H I L CNN "Digi-Key_PN"
-F5 "SN49B12B" 200 500 60 H I L CNN "MPN"
-F6 "Connectors, Interconnects" 200 600 60 H I L CNN "Category"
-F7 "Barrel - Audio Connectors" 200 700 60 H I L CNN "Family"
-F8 "http://www.switchcraft.com/Drawings/SN49B_SERIES_CD.pdf" 200 800 60 H I L CNN "DK_Datasheet_Link"
-F9 "/product-detail/en/switchcraft-inc/SN49B12B/SC1522-ND/412780" 200 900 60 H I L CNN "DK_Detail_Page"
-F10 "CONN JACK STEREO 6.35MM R/A" 200 1000 60 H I L CNN "Description"
-F11 "Switchcraft Inc." 200 1100 60 H I L CNN "Manufacturer"
-F12 "Active" 200 1200 60 H I L CNN "Status"
-DRAW
-S 200 200 -300 -200 0 1 0 f
-P 4 0 1 0 200 0 100 0 50 -50 0 0 N
-P 4 0 1 0 200 100 0 100 -50 50 -100 100 N
-P 6 0 1 0 200 -100 -150 -100 -150 100 -200 100 -200 -50 -150 -50 N
-X ~ R 400 100 200 L 50 50 1 1 B
-X ~ RB 0 -400 200 U 50 50 1 1 B
-X ~ S 400 -100 200 L 50 50 1 1 B
-X ~ T 400 0 200 L 50 50 1 1 B
-X ~ TB -100 -400 200 U 50 50 1 1 B
 ENDDRAW
 ENDDEF
 #

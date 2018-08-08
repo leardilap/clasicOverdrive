@@ -1,3 +1,4 @@
 (sym_lib_table
   (lib (name clasicOverdrive)(type Legacy)(uri ${KIPRJMOD}/clasicOverdrive.lib)(options "")(descr ""))
+  (lib (name clasicOverdrive-rescue)(type Legacy)(uri ${KIPRJMOD}/clasicOverdrive-rescue.lib)(options "")(descr ""))
 )

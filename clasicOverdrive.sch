@@ -92,7 +92,7 @@ F 3 "~" H 7300 3100 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L Device:POT RV3
+L clasicOverdrive-rescue:POT-Device RV3
 U 1 1 5ACC9FDB
 P 7550 2750
 F 0 "RV3" H 7480 2796 50  0000 R CNN
@@ -169,7 +169,7 @@ F 3 "~" H 9450 3250 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L Device:POT RV2
+L clasicOverdrive-rescue:POT-Device RV2
 U 1 1 5ACC2718
 P 5550 1600
 F 0 "RV2" V 5350 1650 50  0000 R CNN
@@ -224,7 +224,7 @@ F 3 "~" H 5400 3450 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:POT RV1
+L clasicOverdrive-rescue:POT-Device RV1
 U 1 1 5ACC2B71
 P 4550 2550
 F 0 "RV1" V 4350 2600 50  0000 R CNN
@@ -290,7 +290,7 @@ F 3 "~" H 3550 2350 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L Connector_Specialized:Jack-DC J1
+L clasicOverdrive-rescue:Jack-DC-Connector_Specialized J1
 U 1 1 5ACC4F8C
 P 800 2650
 F 0 "J1" H 800 2450 50  0000 R CNN
@@ -1070,7 +1070,7 @@ DRIVE
 Text Notes 7300 2550 0    50   ~ 0
 LEVEL
 $Comp
-L dk_Barrel-Audio-Connectors:SN49B12B CON1
+L clasicOverdrive-rescue:SN49B12B-dk_Barrel-Audio-Connectors CON1
 U 1 1 5AD02C8E
 P 800 3700
 F 0 "CON1" H 856 4087 60  0000 C CNN
@@ -1090,7 +1090,7 @@ F 12 "Active" H 1000 4900 60  0001 L CNN "Status"
 	1    0    0    -1  
 $EndComp
 $Comp
-L dk_Barrel-Audio-Connectors:SN49B12B CON2
+L clasicOverdrive-rescue:SN49B12B-dk_Barrel-Audio-Connectors CON2
 U 1 1 5AD030A4
 P 10800 3000
 F 0 "CON2" H 10857 3387 60  0000 C CNN

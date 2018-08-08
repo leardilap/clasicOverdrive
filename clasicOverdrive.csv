@@ -1,0 +1,31 @@
+Id,Designator,Package,Quantity,Designation,Supplier and ref
+1,C1,C_0805_2012Metric_Pad1.15x1.50mm_HandSolder,1,22n,https://www.digikey.de/product-detail/en/kemet/C0805C223K5RACTU/399-1163-1-ND/411438
+2,C2,C_0805_2012Metric_Pad1.15x1.50mm_HandSolder,1,47 n,https://www.digikey.de/product-detail/en/murata-electronics-north-america/GCM21BR72A473KA37L/490-4969-1-ND/1765288
+3,"C3,C9",C_0805_2012Metric_Pad1.15x1.50mm_HandSolder,2,1u,https://www.digikey.de/product-detail/en/murata-electronics-north-america/GRM21BR71C105KA01L/490-1691-1-ND/587411
+4,C4,C_0805_2012Metric_Pad1.15x1.50mm_HandSolder,1,51p,https://www.digikey.de/product-detail/en/american-technical-ceramics/600F510JT250XT/1284-1066-1-ND/3905436
+5,C5,C_1206_3216Metric_Pad1.24x1.80mm_HandSolder,1,100u,https://www.digikey.de/product-detail/en/avx-corporation/TLJA107M010R1400/478-5651-1-ND/2077306
+6,"C6,C7",C_1206_3216Metric_Pad1.24x1.80mm_HandSolder,2,0.22u,https://www.digikey.de/product-detail/en/avx-corporation/TAJA224K035RNJ/478-2337-1-ND/678505
+7,C8,C_1206_3216Metric_Pad1.24x1.80mm_HandSolder,1,47u,https://www.digikey.de/product-detail/en/rohm-semiconductor/TCTAL1A476M8R/511-1500-1-ND/1209677
+8,C10,C_0805_2012Metric_Pad1.15x1.50mm_HandSolder,1,0.1u,https://www.digikey.de/product-detail/en/kemet/C0805C104M5UACTU/399-1176-1-ND/411451
+9,C11,C_1206_3216Metric_Pad1.24x1.80mm_HandSolder,1,10u,https://www.digikey.de/product-detail/en/rohm-semiconductor/TCA1C106M8R/511-1473-1-ND/923771
+10,D1,LED_1206_3216Metric_Pad1.07x1.80mm_HandSolder,1,LED,https://www.digikey.de/product-detail/en/APL3015ZGCK-F01/754-2127-1-ND/7319055/?itemSeq=268717046
+11,"D2,D3",Diode_SMD:D_SOD-323_HandSoldering,2,1N4148,https://www.digikey.de/product-detail/en/taiwan-semiconductor-corporation/1N4148W-G-RHG/1N4148W-GRHGCT-ND/7644279
+12,"R1,R6",R_0603_1608Metric_Pad0.84x1.00mm_HandSolder,2,4.7k,
+13,"R2,R4,R16",R_0603_1608Metric_Pad0.84x1.00mm_HandSolder,3,511k,
+14,"R3,R9,R14,R15",R_0603_1608Metric_Pad0.84x1.00mm_HandSolder,4,1k,
+15,"R5,R7,R10,R11,R13,R17,R19",R_0603_1608Metric_Pad0.84x1.00mm_HandSolder,7,10k,
+16,R8,R_0603_1608Metric_Pad0.84x1.00mm_HandSolder,1,51k,
+17,R12,R_0603_1608Metric_Pad0.84x1.00mm_HandSolder,1,220,
+18,R18,R_0603_1608Metric_Pad0.84x1.00mm_HandSolder,1,100,
+19,U2,SOIC-8_3.9x4.9mm_P1.27mm,1,LM4562,https://www.mouser.de/ProductDetail/Texas-Instruments/LM4562MA-NOPB?qs=sGAEpiMZZMvu8NZDyZ4K0aocIoajxgSM
+20,J1,Jack_Horizontal,1,Jack-DC,https://www.digikey.de/product-detail/en/EJ503A/EJ503A-ND/5431753/?itemSeq=258460846
+21,RV1,Pot_series_296,1,500k,https://www.digikey.de/product-detail/en/296UD504B1N/CT2270-ND/203849/?itemSeq=258460926
+22,RV2,Pot_series_296,1,25k,https://www.digikey.de/product-detail/en/296UD253B1N/CT2266-ND/203845/?itemSeq=258460881
+23,RV3,Pot_series_296,1,100k,https://www.digikey.de/product-detail/en/296UD104B1N/CT2268-ND/203847/?itemSeq=258461003
+24,U1,FS57003PLT2B2M2QE,1,foot_switch,https://www.digikey.de/product-detail/en/FS57003PLT2B2M2QE/EG5492-ND/6825400/?itemSeq=258460863
+25,"Q1,Q2",TO-18-3,2,2N2222,https://www.digikey.de/product-detail/en/2N2222/2N2222CS-ND/4806844/?itemSeq=258630717
+26,"CON1,CON2",Headphone_Jack_6.35mm_RA49B14B,2,SN49B12B,https://www.digikey.de/product-detail/en/RA49C12B/SC2083-ND/1289192/?itemSeq=258460838
+,,,,,https://www.digikey.de/product-detail/en/RA49C12A/SC1862-ND/1289117/?itemSeq=257760448
+27,"MK1,MK2,MK3,MK4",MountingHole_3.2mm_M3,4,Mounting_Hole,https://www.digikey.de/product-detail/en/R30-3000402/952-1495-ND/2264476/?itemSeq=258465833
+,,,,,https://www.digikey.de/product-detail/en/R30-1000402/952-3008-ND/3924443/?itemSeq=258465829
+,,,,,https://www.digikey.de/product-detail/en/R30-3001302/952-1504-ND/2264485/?itemSeq=258465822
