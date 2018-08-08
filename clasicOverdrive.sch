@@ -251,7 +251,7 @@ U 1 1 5ACC2E8B
 P 4350 1600
 F 0 "D2" H 4350 1816 50  0000 C CNN
 F 1 "1N4148" H 4350 1725 50  0000 C CNN
-F 2 "Diode_SMD:D_0805_2012Metric_Pad0.97x1.50mm_HandSolder" H 4350 1425 50  0001 C CNN
+F 2 "Diode_SMD:D_SOD-323_HandSoldering" H 4350 1425 50  0001 C CNN
 F 3 "http://www.nxp.com/documents/data_sheet/1N4148_1N4448.pdf" H 4350 1600 50  0001 C CNN
 	1    4350 1600
 	1    0    0    -1  
@@ -262,7 +262,7 @@ U 1 1 5ACC2F51
 P 4350 2000
 F 0 "D3" H 4350 1784 50  0000 C CNN
 F 1 "1N4148" H 4350 1875 50  0000 C CNN
-F 2 "Diode_SMD:D_0805_2012Metric_Pad0.97x1.50mm_HandSolder" H 4350 1825 50  0001 C CNN
+F 2 "Diode_SMD:D_SOD-323_HandSoldering" H 4350 1825 50  0001 C CNN
 F 3 "http://www.nxp.com/documents/data_sheet/1N4148_1N4448.pdf" H 4350 2000 50  0001 C CNN
 	1    4350 2000
 	-1   0    0    1   
