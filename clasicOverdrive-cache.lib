@@ -1,14 +1,14 @@
 EESchema-LIBRARY Version 2.4
 #encoding utf-8
 #
-# Amplifier_Operational:LM4562
+# Amplifier_Operational_LM4562
 #
-DEF Amplifier_Operational:LM4562 U 0 20 Y Y 2 F N
+DEF Amplifier_Operational_LM4562 U 0 5 Y Y 3 L N
 F0 "U" 0 200 50 H V L CNN
-F1 "Amplifier_Operational:LM4562" 0 -200 50 H V L CNN
+F1 "Amplifier_Operational_LM4562" 0 -200 50 H V L CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
-ALIAS LM358 AD8620 LMC6062 LMC6082 TL062 TL072 TL082 NE5532 SA5532 RC4558 RC4560 RC4580 LMV358 TS912 TSV912IDT TSV912IST TLC272 TLC277 MCP602 OPA2134 OPA2340 OPA2376xxD OPA2376xxDGK MC33078 MC33178 LM4562 OP249 OP275 ADA4075-2 MCP6002-xP MCP6002-xSN MCP6002-xMS LM7332 OPA2333xxD OPA2333xxDGK LMC6482 LT1492 LTC6081xMS8 LM6172 MCP6L92 NJM2043 NJM2114 NJM4556A NJM4558 NJM4559 NJM4560 NJM4580 NJM5532 ADA4807-2ARM OPA2691 LT6233 OPA2356xxD OPA2356xxDGK
+ALIAS LM358 AD8620 LMC6062 LMC6082 TL062 TL072 TL082 NE5532 SA5532 RC4558 RC4560 RC4580 LMV358 TS912 TSV912IDT TSV912IST TLC272 TLC277 MCP602 OPA2134 OPA2340 OPA2376xxD OPA2376xxDGK MC33078 MC33178 LM4562 OP249 OP275 ADA4075-2 MCP6002-xP MCP6002-xSN MCP6002-xMS LM7332 OPA2333xxD OPA2333xxDGK LMC6482 LT1492 LTC6081xMS8 LM6172 MCP6L92 NJM2043 NJM2114 NJM4556A NJM4558 NJM4559 NJM4560 NJM4580 NJM5532 ADA4807-2ARM OPA2691 LT6233 OPA2356xxD OPA2356xxDGK OPA1612AxD MC33172 OPA1602
 $FPLIST
  SOIC*3.9x4.9mm*P1.27mm*
  DIP*W7.62mm*
@@ -23,27 +23,45 @@ $FPLIST
  SOIC*5.3x6.2mm*P1.27mm*
 $ENDFPLIST
 DRAW
-P 4 0 1 10 -200 200 200 0 -200 -200 -200 200 f
-X V- 4 -100 -300 150 U 50 50 0 1 W
-X V+ 8 -100 300 150 D 50 50 0 1 W
+P 4 1 1 10 -200 200 200 0 -200 -200 -200 200 f
+P 4 2 1 10 -200 200 200 0 -200 -200 -200 200 f
 X ~ 1 300 0 100 L 50 50 1 1 O
 X - 2 -300 -100 100 R 50 50 1 1 I
 X + 3 -300 100 100 R 50 50 1 1 I
 X + 5 -300 100 100 R 50 50 2 1 I
 X - 6 -300 -100 100 R 50 50 2 1 I
 X ~ 7 300 0 100 L 50 50 2 1 O
+X V- 4 -100 -300 150 U 50 50 3 1 W
+X V+ 8 -100 300 150 D 50 50 3 1 W
 ENDDRAW
 ENDDEF
 #
-# Device:C
+# Connector_TestPoint
 #
-DEF Device:C C 0 10 N Y 1 F N
+DEF Connector_TestPoint TP 0 30 N N 1 F N
+F0 "TP" 0 270 50 H V C CNN
+F1 "Connector_TestPoint" 0 200 50 H V C CNN
+F2 "" 200 0 50 H I C CNN
+F3 "" 200 0 50 H I C CNN
+$FPLIST
+ Pin*
+ Test*
+$ENDFPLIST
+DRAW
+C 0 130 30 0 1 0 N
+X 1 1 0 0 100 U 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# Device_C
+#
+DEF Device_C C 0 10 N Y 1 F N
 F0 "C" 25 100 50 H V L CNN
-F1 "Device:C" 25 -100 50 H V L CNN
+F1 "Device_C" 25 -100 50 H V L CNN
 F2 "" 38 -150 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 $FPLIST
- *:C_*
+ C_*
 $ENDFPLIST
 DRAW
 P 2 0 1 20 -80 -30 80 -30 N
@@ -53,15 +71,15 @@ X ~ 2 0 -150 110 U 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# Device:CP
+# Device_CP
 #
-DEF Device:CP C 0 10 N Y 1 F N
+DEF Device_CP C 0 10 N Y 1 F N
 F0 "C" 25 100 50 H V L CNN
-F1 "Device:CP" 25 -100 50 H V L CNN
+F1 "Device_CP" 25 -100 50 H V L CNN
 F2 "" 38 -150 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 $FPLIST
- *:CP_*
+ CP_*
 $ENDFPLIST
 DRAW
 S -90 20 -90 40 0 1 0 N
@@ -76,11 +94,11 @@ X ~ 2 0 -150 110 U 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# Device:LED
+# Device_LED
 #
-DEF Device:LED D 0 40 N N 1 F N
+DEF Device_LED D 0 40 N N 1 F N
 F0 "D" 0 100 50 H V C CNN
-F1 "Device:LED" 0 -100 50 H V C CNN
+F1 "Device_LED" 0 -100 50 H V C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 $FPLIST
@@ -99,15 +117,15 @@ X A 2 150 0 100 L 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# Device:R
+# Device_R
 #
-DEF Device:R R 0 0 N Y 1 F N
+DEF Device_R R 0 0 N Y 1 F N
 F0 "R" 80 0 50 V V C CNN
-F1 "Device:R" 0 0 50 V V C CNN
+F1 "Device_R" 0 0 50 V V C CNN
 F2 "" -70 0 50 V I C CNN
 F3 "" 0 0 50 H I C CNN
 $FPLIST
- *:R_*
+ R_*
 $ENDFPLIST
 DRAW
 S -40 -100 40 100 0 1 10 N
@@ -116,16 +134,16 @@ X ~ 2 0 -150 50 U 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# Diode:1N4148
+# Diode_1N4148
 #
-DEF Diode:1N4148 D 0 40 N N 1 F N
+DEF Diode_1N4148 D 0 40 N N 1 F N
 F0 "D" 0 100 50 H V C CNN
-F1 "Diode:1N4148" 0 -100 50 H V C CNN
+F1 "Diode_1N4148" 0 -100 50 H V C CNN
 F2 "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal" 0 -175 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 ALIAS 1N4448 1N4149 1N4151 1N914 BA243 BA244 BA282 BA283 BAV17 BAV18 BAV19 BAV20 BAV21 BAW75 BAW76 BAY93
 $FPLIST
- *:D*DO?35*
+ D*DO?35*
 $ENDFPLIST
 DRAW
 P 2 0 1 8 -50 50 -50 -50 N
@@ -136,27 +154,11 @@ X A 2 150 0 100 L 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# Mechanical:Mounting_Hole
+# clasicOverdrive-rescue_Jack-DC-Connector_Specialized
 #
-DEF Mechanical:Mounting_Hole MK 0 40 Y Y 1 F N
-F0 "MK" 0 200 50 H V C CNN
-F1 "Mechanical:Mounting_Hole" 0 125 50 H V C CNN
-F2 "" 0 0 50 H I C CNN
-F3 "" 0 0 50 H I C CNN
-$FPLIST
- Mounting?Hole*
- Hole*
-$ENDFPLIST
-DRAW
-C 0 0 50 0 1 50 N
-ENDDRAW
-ENDDEF
-#
-# clasicOverdrive-rescue:Jack-DC-Connector_Specialized
-#
-DEF clasicOverdrive-rescue:Jack-DC-Connector_Specialized J 0 40 Y Y 1 F N
+DEF clasicOverdrive-rescue_Jack-DC-Connector_Specialized J 0 40 Y Y 1 F N
 F0 "J" 0 210 50 H V C CNN
-F1 "clasicOverdrive-rescue:Jack-DC-Connector_Specialized" 0 -175 50 H V C CNN
+F1 "clasicOverdrive-rescue_Jack-DC-Connector_Specialized" 0 -175 50 H V C CNN
 F2 "" 50 -40 50 H I C CNN
 F3 "" 50 -40 50 H I C CNN
 $FPLIST
@@ -177,11 +179,27 @@ X ~ 3 300 0 100 L 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# clasicOverdrive-rescue:POT-Device
+# clasicOverdrive-rescue_Mounting_Hole-Mechanical
 #
-DEF clasicOverdrive-rescue:POT-Device RV 0 40 Y N 1 F N
+DEF clasicOverdrive-rescue_Mounting_Hole-Mechanical MK 0 40 Y Y 1 F N
+F0 "MK" 0 200 50 H V C CNN
+F1 "clasicOverdrive-rescue_Mounting_Hole-Mechanical" 0 125 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+$FPLIST
+ Mounting?Hole*
+ Hole*
+$ENDFPLIST
+DRAW
+C 0 0 50 0 1 50 N
+ENDDRAW
+ENDDEF
+#
+# clasicOverdrive-rescue_POT-Device
+#
+DEF clasicOverdrive-rescue_POT-Device RV 0 40 Y N 1 F N
 F0 "RV" -175 0 50 V V C CNN
-F1 "clasicOverdrive-rescue:POT-Device" -100 0 50 V V C CNN
+F1 "clasicOverdrive-rescue_POT-Device" -100 0 50 V V C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 $FPLIST
@@ -197,11 +215,11 @@ X 3 3 0 -150 50 U 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# clasicOverdrive-rescue:SN49B12B-dk_Barrel-Audio-Connectors
+# clasicOverdrive-rescue_SN49B12B-dk_Barrel-Audio-Connectors
 #
-DEF clasicOverdrive-rescue:SN49B12B-dk_Barrel-Audio-Connectors CON 0 40 Y Y 1 F N
+DEF clasicOverdrive-rescue_SN49B12B-dk_Barrel-Audio-Connectors CON 0 40 Y Y 1 F N
 F0 "CON" 0 300 60 H V C CNN
-F1 "clasicOverdrive-rescue:SN49B12B-dk_Barrel-Audio-Connectors" 0 400 60 H V C CNN
+F1 "clasicOverdrive-rescue_SN49B12B-dk_Barrel-Audio-Connectors" 0 400 60 H V C CNN
 F2 "digikey-footprints:Headphone_Jack_6.35mm_SN49B12B" 200 200 60 H I L CNN
 F3 "http://www.switchcraft.com/Drawings/SN49B_SERIES_CD.pdf" 200 300 60 H I L CNN
 F4 "SC1522-ND" 200 400 60 H I L CNN "Digi-Key_PN"
@@ -226,11 +244,11 @@ X ~ TB -100 -400 200 U 50 50 1 1 B
 ENDDRAW
 ENDDEF
 #
-# clasicOverdrive:+4V5
+# clasicOverdrive_+4V5
 #
-DEF clasicOverdrive:+4V5 #PWR 0 0 Y Y 1 F P
+DEF clasicOverdrive_+4V5 #PWR 0 0 Y Y 1 F P
 F0 "#PWR" 0 -150 50 H I C CNN
-F1 "clasicOverdrive:+4V5" 0 140 50 H V C CNN
+F1 "clasicOverdrive_+4V5" 0 140 50 H V C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 DRAW
@@ -241,11 +259,11 @@ X +4V5 1 0 0 0 U 50 50 1 1 W N
 ENDDRAW
 ENDDEF
 #
-# clasicOverdrive:2N2222
+# clasicOverdrive_2N2222
 #
-DEF clasicOverdrive:2N2222 Q 0 0 Y N 1 F N
+DEF clasicOverdrive_2N2222 Q 0 0 Y N 1 F N
 F0 "Q" 200 75 50 H V L CNN
-F1 "clasicOverdrive:2N2222" 200 0 50 H V L CNN
+F1 "clasicOverdrive_2N2222" 200 0 50 H V L CNN
 F2 "Package_TO_SOT_THT:TO-18" 200 -75 50 H I L CIN
 F3 "" 0 0 50 H I L CNN
 $FPLIST
@@ -263,11 +281,11 @@ X C 3 100 200 100 D 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# clasicOverdrive:foot_switch
+# clasicOverdrive_foot_switch
 #
-DEF clasicOverdrive:foot_switch U 0 1 Y Y 3 F N
+DEF clasicOverdrive_foot_switch U 0 1 Y Y 3 F N
 F0 "U" -125 210 50 H V L CNN
-F1 "clasicOverdrive:foot_switch" -125 140 50 H V L CNN
+F1 "clasicOverdrive_foot_switch" -125 140 50 H V L CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 DRAW
@@ -307,11 +325,11 @@ X ~ 9 300 -200 100 L 50 50 3 1 P
 ENDDRAW
 ENDDEF
 #
-# power:+9V
+# power_+9V
 #
-DEF power:+9V #PWR 0 0 Y Y 1 F P
+DEF power_+9V #PWR 0 0 Y Y 1 F P
 F0 "#PWR" 0 -150 50 H I C CNN
-F1 "power:+9V" 0 140 50 H V C CNN
+F1 "power_+9V" 0 140 50 H V C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 DRAW
@@ -322,11 +340,11 @@ X +9V 1 0 0 0 U 50 50 1 1 W N
 ENDDRAW
 ENDDEF
 #
-# power:GND
+# power_GND
 #
-DEF power:GND #PWR 0 0 Y Y 1 F P
+DEF power_GND #PWR 0 0 Y Y 1 F P
 F0 "#PWR" 0 -250 50 H I C CNN
-F1 "power:GND" 0 -150 50 H V C CNN
+F1 "power_GND" 0 -150 50 H V C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 DRAW

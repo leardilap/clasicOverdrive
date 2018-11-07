@@ -1,6 +1,6 @@
 EESchema Schematic File Version 4
 LIBS:clasicOverdrive-cache
-EELAYER 26 0
+EELAYER 29 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
@@ -834,44 +834,16 @@ Wire Wire Line
 Wire Wire Line
 	1600 5200 1600 5050
 $Comp
-L power:+9V #PWR0122
-U 1 1 5AD25683
-P 6200 3500
-F 0 "#PWR0122" H 6200 3350 50  0001 C CNN
-F 1 "+9V" H 6215 3673 50  0000 C CNN
-F 2 "" H 6200 3500 50  0001 C CNN
-F 3 "" H 6200 3500 50  0001 C CNN
-	1    6200 3500
-	-1   0    0    1   
-$EndComp
-Wire Wire Line
-	6200 3500 6200 3400
-$Comp
-L power:GND #PWR0123
-U 1 1 5AD28C8D
-P 6200 2650
-F 0 "#PWR0123" H 6200 2400 50  0001 C CNN
-F 1 "GND" H 6205 2477 50  0000 C CNN
-F 2 "" H 6200 2650 50  0001 C CNN
-F 3 "" H 6200 2650 50  0001 C CNN
-	1    6200 2650
-	-1   0    0    1   
-$EndComp
-Wire Wire Line
-	6200 2650 6200 2800
-$Comp
 L power:GND #PWR0124
 U 1 1 5AD2C63D
-P 4250 3550
-F 0 "#PWR0124" H 4250 3300 50  0001 C CNN
-F 1 "GND" H 4255 3377 50  0000 C CNN
-F 2 "" H 4250 3550 50  0001 C CNN
-F 3 "" H 4250 3550 50  0001 C CNN
-	1    4250 3550
-	-1   0    0    1   
+P 3900 6450
+F 0 "#PWR0124" H 3900 6200 50  0001 C CNN
+F 1 "GND" H 3905 6277 50  0000 C CNN
+F 2 "" H 3900 6450 50  0001 C CNN
+F 3 "" H 3900 6450 50  0001 C CNN
+	1    3900 6450
+	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	4250 3550 4250 3650
 $Comp
 L Device:C C4
 U 1 1 5AD3A1BB
@@ -900,16 +872,14 @@ Wire Wire Line
 $Comp
 L power:+9V #PWR0125
 U 1 1 5AD5279F
-P 4250 4350
-F 0 "#PWR0125" H 4250 4200 50  0001 C CNN
-F 1 "+9V" H 4265 4523 50  0000 C CNN
-F 2 "" H 4250 4350 50  0001 C CNN
-F 3 "" H 4250 4350 50  0001 C CNN
-	1    4250 4350
-	-1   0    0    1   
+P 3900 5850
+F 0 "#PWR0125" H 3900 5700 50  0001 C CNN
+F 1 "+9V" H 3915 6023 50  0000 C CNN
+F 2 "" H 3900 5850 50  0001 C CNN
+F 3 "" H 3900 5850 50  0001 C CNN
+	1    3900 5850
+	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	4250 4350 4250 4250
 Wire Wire Line
 	4800 3200 4500 3200
 Wire Wire Line
@@ -1119,7 +1089,7 @@ Connection ~ 1350 3700
 Wire Wire Line
 	10400 3100 10400 3200
 $Comp
-L Mechanical:Mounting_Hole MK1
+L clasicOverdrive-rescue:Mounting_Hole-Mechanical MK1
 U 1 1 5ADA8A7E
 P 9700 5150
 F 0 "MK1" H 9800 5196 50  0000 L CNN
@@ -1130,7 +1100,7 @@ F 3 "" H 9700 5150 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Mechanical:Mounting_Hole MK2
+L clasicOverdrive-rescue:Mounting_Hole-Mechanical MK2
 U 1 1 5ADA8C59
 P 9700 5350
 F 0 "MK2" H 9800 5396 50  0000 L CNN
@@ -1141,7 +1111,7 @@ F 3 "" H 9700 5350 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Mechanical:Mounting_Hole MK3
+L clasicOverdrive-rescue:Mounting_Hole-Mechanical MK3
 U 1 1 5ADA8CDF
 P 9700 5550
 F 0 "MK3" H 9800 5596 50  0000 L CNN
@@ -1152,7 +1122,7 @@ F 3 "" H 9700 5550 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Mechanical:Mounting_Hole MK4
+L clasicOverdrive-rescue:Mounting_Hole-Mechanical MK4
 U 1 1 5ADA8D59
 P 9700 5750
 F 0 "MK4" H 9800 5796 50  0000 L CNN
@@ -1160,6 +1130,61 @@ F 1 "Mounting_Hole" H 9800 5705 50  0000 L CNN
 F 2 "MountingHole:MountingHole_3.2mm_M3" H 9700 5750 50  0001 C CNN
 F 3 "" H 9700 5750 50  0001 C CNN
 	1    9700 5750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Amplifier_Operational:LM4562 U2
+U 3 1 5BE39832
+P 4000 6150
+F 0 "U2" H 3958 6196 50  0000 L CNN
+F 1 "LM4562" H 3958 6105 50  0000 L CNN
+F 2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" H 4000 6150 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/lm4562.pdf" H 4000 6150 50  0001 C CNN
+	3    4000 6150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:TestPoint TP1
+U 1 1 5BE3E2A4
+P 7350 5650
+F 0 "TP1" H 7292 5676 50  0000 R CNN
+F 1 "9V" H 7292 5767 50  0000 R CNN
+F 2 "TestPoint:TestPoint_Pad_D2.0mm" H 7550 5650 50  0001 C CNN
+F 3 "~" H 7550 5650 50  0001 C CNN
+	1    7350 5650
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:+9V #PWR0122
+U 1 1 5BE3EBEA
+P 7350 5650
+F 0 "#PWR0122" H 7350 5500 50  0001 C CNN
+F 1 "+9V" H 7365 5823 50  0000 C CNN
+F 2 "" H 7350 5650 50  0001 C CNN
+F 3 "" H 7350 5650 50  0001 C CNN
+	1    7350 5650
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:TestPoint TP2
+U 1 1 5BE3F090
+P 7850 5650
+F 0 "TP2" H 7792 5676 50  0000 R CNN
+F 1 "4V5" H 7792 5767 50  0000 R CNN
+F 2 "TestPoint:TestPoint_Pad_D2.0mm" H 8050 5650 50  0001 C CNN
+F 3 "~" H 8050 5650 50  0001 C CNN
+	1    7850 5650
+	-1   0    0    1   
+$EndComp
+$Comp
+L clasicOverdrive:+4V5 #PWR0123
+U 1 1 5BE3F2E8
+P 7850 5650
+F 0 "#PWR0123" H 7850 5500 50  0001 C CNN
+F 1 "+4V5" H 7865 5823 50  0000 C CNN
+F 2 "" H 7850 5650 50  0001 C CNN
+F 3 "" H 7850 5650 50  0001 C CNN
+	1    7850 5650
 	1    0    0    -1  
 $EndComp
 $EndSCHEMATC
