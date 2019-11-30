@@ -1,35 +1,27 @@
-%TF.GenerationSoftware,KiCad,Pcbnew,6.0.0-rc1-unknown-f2ccad3~66~ubuntu18.04.1*%
-%TF.CreationDate,2018-11-07T22:10:29+01:00*%
-%TF.ProjectId,clasicOverdrive,636c6173-6963-44f7-9665-726472697665,rev?*%
-%TF.SameCoordinates,PX5f67d40PY8f46778*%
+%TF.GenerationSoftware,KiCad,Pcbnew,5.1.5-52549c5~84~ubuntu18.04.1*%
+%TF.CreationDate,2019-11-30T23:42:39+01:00*%
+%TF.ProjectId,clasicOverdrive,636c6173-6963-44f7-9665-726472697665,A*%
+%TF.SameCoordinates,PX6708f40PY898d9f8*%
 %TF.FileFunction,NonPlated,1,2,NPTH,Drill*%
 %TF.FilePolarity,Positive*%
 %FSLAX46Y46*%
 G04 Gerber Fmt 4.6, Leading zero omitted, Abs format (unit mm)*
-G04 Created by KiCad (PCBNEW 6.0.0-rc1-unknown-f2ccad3~66~ubuntu18.04.1) date Mi 07 Nov 2018 22:10:29 CET*
+G04 Created by KiCad (PCBNEW 5.1.5-52549c5~84~ubuntu18.04.1) date 2019-11-30 23:42:39*
 %MOMM*%
 %LPD*%
-G01*
 G04 APERTURE LIST*
 %TA.AperFunction,ComponentDrill*%
-%ADD10C,3.200000*%
-%TD*%
-%TA.AperFunction,ComponentDrill*%
-%ADD11C,3.250000*%
+%ADD10C,2.000000*%
 %TD*%
 G04 APERTURE END LIST*
 D10*
-%TO.C,MK3*%
-X46000000Y79000000D03*
-%TO.C,MK1*%
-X4000000Y4000000D03*
-%TO.C,MK4*%
-X4000000Y79000000D03*
-%TO.C,MK2*%
-X46000000Y4000000D03*
-D11*
-%TO.C,CON1*%
-X25000000Y28000000D03*
-%TO.C,CON2*%
-X25000000Y45000000D03*
+%TO.C,RV1*%
+X26100000Y61500000D03*
+X34900000Y61500000D03*
+%TO.C,RV3*%
+X-600000Y45800000D03*
+X8200000Y45800000D03*
+%TO.C,RV2*%
+X-600000Y61500000D03*
+X8200000Y61500000D03*
 M02*
