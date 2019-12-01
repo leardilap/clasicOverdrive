@@ -1,7 +1,7 @@
 (export (version D)
   (design
     (source /home/luis/Projects/kicad/clasicOverdrive/clasicOverdrive/clasicOverdrive.sch)
-    (date "Sat 30 Nov 2019 11:22:47 PM CET")
+    (date "Sun 01 Dec 2019 12:52:11 PM CET")
     (tool "Eeschema 5.1.5-52549c5~84~ubuntu18.04.1")
     (sheet (number 1) (name /) (tstamps /)
       (title_block
